@@ -15,8 +15,8 @@ while (summ < 50) {
     array.push(number1);
     summ += number1;
 }
-console.log(summ);
-console.log(array);    
+console.log("Somma numeri dell'Array",summ);
+console.log("Struttura dell'Array", array);    
 
 
 
