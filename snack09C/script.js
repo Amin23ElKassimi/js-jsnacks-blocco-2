@@ -8,17 +8,15 @@
 
 const array = [];
 let summ = 0;
-let number1 = 0;
+
 
 while (summ < 50) {
-    number1 = parseInt(prompt('Inserisci un numero'));
+    const number1 = parseInt(prompt('Inserisci un numero'));
     array.push(number1);
     summ += number1;
 }
-
-console.log(number1);
 console.log(summ);
-
+console.log(array);    
 
 
 
