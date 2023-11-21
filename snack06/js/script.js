@@ -6,9 +6,11 @@
 // Create Cards
 
 
-const numberCards = parseInt(prompt('Inserisci il numero di carte da generare'));
+
 
 const wrapperElement = document.querySelector('div.wrapper');
+
+function generateCards(numberCards) {
 
 for ( let i = 1; i <= numberCards ; i++){
     const cardElement = document.createElement('div');
@@ -17,15 +19,14 @@ for ( let i = 1; i <= numberCards ; i++){
     cardElement.appendChild(headingCardElement);
     wrapperElement.appendChild(cardElement);
     cardElement.className += ' bg-danger';
-
+}
 }
 
 
 
-// function 
+const umberCardsUser = parseInt(prompt('Inserisci il numero di carte da generare'));
 
-
-
+generateCards(umberCardsUser);
 
 
 
