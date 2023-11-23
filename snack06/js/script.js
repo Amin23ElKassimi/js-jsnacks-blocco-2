@@ -3,30 +3,30 @@
 
 
 
-// Create Cards
+// Create squares
 
 
 
 
 const wrapperElement = document.querySelector('div.wrapper');
 
-function generateCards(numberCards) {
+function generatesquares(numbersquares) {
 
-for ( let i = 1; i <= numberCards ; i++){
-    const cardElement = document.createElement('div');
-    cardElement.className = 'card';
-    const headingCardElement = document.createElement('span');
-    cardElement.appendChild(headingCardElement);
-    wrapperElement.appendChild(cardElement);
-    cardElement.className += ' bg-danger';
+for ( let i = 1; i <= numbersquares ; i++){
+    const squareElement = document.createElement('div');
+    squareElement.className = 'square';
+    const headingsquareElement = document.createElement('span');
+    squareElement.appendChild(headingsquareElement);
+    wrapperElement.appendChild(squareElement);
+    squareElement.className += ' bg-danger';
 }
 }
 
 
 
-const umberCardsUser = parseInt(prompt('Inserisci il numero di carte da generare'));
+const umbersquaresUser = parseInt(prompt('Inserisci il numero di carte da generare'));
 
-generateCards(umberCardsUser);
+generatesquares(umbersquaresUser);
 
 
 
